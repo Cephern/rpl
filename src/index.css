@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* helper classes */
+.grid-center {
+  align-self: center;
+  justify-self: center;
+}
+
+.App {
+  width: 1400px;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  background-image: url("./assets/bg/bg3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.Logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.Logo img {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.Logo p {
+  margin: 0;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.Logo p span.j {
+  color: #77d8d8;
+}
+
+.Logo p span.m {
+  color: #f2a365;
+}
+
+.container {
+  width: 1200px;
+  height: 900px;
+  display: grid;
+  grid-template-areas:
+    "User GetCoins"
+    "Tasks GetCoins"
+    "Tasks RandomQuests"
+    "Tasks RandomQuests"
+    "Purchased DailyQuests";
+  gap: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.User {
+  grid-area: User;
+  border: 2px solid #000;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+.Tasks {
+  grid-area: Tasks;
+  border: 2px solid #000;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+.RandomQuests {
+  grid-area: RandomQuests;
+  border: 2px solid #000;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+.Purchased {
+  grid-area: Purchased;
+  border: 2px solid #000;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+.GetCoins {
+  grid-area: GetCoins;
+  border: 2px solid #000;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+.DailyQuests {
+  grid-area: DailyQuests;
+  border: 2px solid #000;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+}
