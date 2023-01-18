@@ -26,6 +26,8 @@ body {
   position: relative;
 }
 
+/* Logo  */
+
 .Logo {
   position: absolute;
   top: 10px;
@@ -75,16 +77,70 @@ body {
   box-sizing: border-box;
 }
 
+/* User */
+
 .User {
   grid-area: User;
+  display: flex;
   border: 2px solid #000;
-  width: 100%;
-  height: 100%;
   border: none;
+}
+
+.User .userInfo {
+  display: grid;
+  grid-template-areas:
+    "displayName level"
+    "exp exp";
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+  color: #fff;
+  text-shadow: 1px 0 1px #000;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(8px);
 }
+
+.User .userInfo .displayName {
+  grid-area: displayName;
+}
+
+.User .userInfo .level {
+  grid-area: level;
+}
+
+.User .userInfo progress {
+  grid-area: exp;
+}
+
+.User .userRanking {
+  padding: 10px;
+  margin-left: 20px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+}
+
+.User .userRanking img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.User .userRanking p {
+  margin: 0;
+  color: darkorange;
+  text-shadow: 1px 0 1px #000;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Tasks */
 
 .Tasks {
   grid-area: Tasks;
@@ -97,6 +153,8 @@ body {
   backdrop-filter: blur(8px);
 }
 
+/* RandomQuests */
+
 .RandomQuests {
   grid-area: RandomQuests;
   border: 2px solid #000;
@@ -107,6 +165,8 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(8px);
 }
+
+/* Purchased */
 
 .Purchased {
   grid-area: Purchased;
@@ -119,6 +179,8 @@ body {
   backdrop-filter: blur(8px);
 }
 
+/* GetCoins */
+
 .GetCoins {
   grid-area: GetCoins;
   border: 2px solid #000;
@@ -129,6 +191,8 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(8px);
 }
+
+/* DailyQuests */
 
 .DailyQuests {
   grid-area: DailyQuests;

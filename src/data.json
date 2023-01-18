@@ -1,0 +1,28 @@
+{
+  "1": {
+    "userInfo": {
+      "displayName": "ExodusLul",
+      "photoURL": "urlHere",
+      "level": 49,
+      "expProgress": 70,
+      "rank": "Sugar Bun"
+    },
+    "tasks": [
+      { "taskId": 1, "taskName": "Закончить рпл приложение" },
+      { "taskId": 2, "taskName": "Скинуть вес до 75кг" },
+      { "taskId": 3, "taskName": "Накопить на наушники" },
+      { "taskId": 4, "taskName": "Подтянуться 12 раз" },
+      { "taskId": 5, "taskName": "Приготовить корейские блинчики" }
+    ],
+    "dailyQuests": [
+      { "dailyId": 1, "dailyName": "выучить 20 слов" },
+      { "dailyId": 2, "dailyName": "потренироваться 30 минут" },
+      { "dailyId": 3, "dailyName": "выпить литр воды" }
+    ],
+    "randomQuests": [
+      { "randomQuestId": 1, "randomQuestName": "пройти 1км" },
+      { "randomQuestId": 2, "randomQuestName": "прибраться в квартире" },
+      { "randomQuestId": 3, "randomQuestName": "найти новых песен: 2" }
+    ]
+  }
+}
