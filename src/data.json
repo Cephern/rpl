@@ -23,6 +23,16 @@
       { "randomQuestId": 1, "randomQuestName": "пройти 1км" },
       { "randomQuestId": 2, "randomQuestName": "прибраться в квартире" },
       { "randomQuestId": 3, "randomQuestName": "найти новых песен: 2" }
+    ],
+    "purchased": [
+      "gaming",
+      "junk food",
+      "tv",
+      "order tasties",
+      "day off",
+      "buy game",
+      "buy ali stuff",
+      "stay after midnight"
     ]
   }
 }
