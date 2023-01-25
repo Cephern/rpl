@@ -26,7 +26,7 @@ h2 {
 
 .App {
   width: 1400px;
-  height: 900px;
+  height: 940px;
   display: flex;
   justify-content: center;
   background-image: url("./assets/bg/bg3.png");
@@ -34,7 +34,7 @@ h2 {
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
-  border-radius: 10px;
+  border-radius: 40px;
 }
 
 /* Logo  */
@@ -46,8 +46,9 @@ h2 {
 }
 
 .Logo img {
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
   border: 2px solid #fff;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.8);
@@ -55,12 +56,13 @@ h2 {
 
 .Logo p {
   margin: 0;
+  padding: 2px 4px;
   text-align: center;
   border: 2px solid #fff;
   border-radius: 4px;
   color: #fff;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -120,19 +122,18 @@ nav .link-wrapper:has(a.active) {
 }
 
 /* Home Page */
-.container {
-  width: 1200px;
-  height: 900px;
+.Home {
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-template-areas:
-    "User User GetCoins"
-    "Tasks Tasks GetCoins"
-    "Tasks Tasks RandomQuests"
-    "Tasks Tasks RandomQuests"
-    "Tasks Tasks DailyQuests"
-    "Purchased Purchased DailyQuests";
+    "User User Stats Stats Stats"
+    "Tasks Tasks Tasks RandomQuests RandomQuests"
+    "Tasks Tasks Tasks RandomQuests RandomQuests"
+    "Tasks Tasks Tasks DailyQuests DailyQuests"
+    "Purchased Purchased Purchased DailyQuests DailyQuests";
   gap: 20px;
-  padding: 15px;
+  padding: 0;
   border-radius: 20px;
   box-sizing: border-box;
 }
@@ -142,8 +143,27 @@ nav .link-wrapper:has(a.active) {
 .User {
   grid-area: User;
   display: flex;
-  border: 2px solid #000;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   border: none;
+  background-color: #000;
+  border-radius: 0 0 40px 0;
+  position: relative;
+}
+
+.User::before {
+  content: url("./assets/svgs/round.svg");
+  position: absolute;
+  bottom: -39px;
+  left: -2px;
+}
+
+.User::after {
+  content: url("./assets/svgs/round.svg");
+  position: absolute;
+  top: -2px;
+  right: -39px;
 }
 
 .User .userInfo {
@@ -154,13 +174,15 @@ nav .link-wrapper:has(a.active) {
   align-items: center;
   justify-items: center;
   padding: 10px;
-  color: #fff;
-  text-shadow: 1px 0 1px #000;
+  margin-right: 20px;
+  color: #000;
+  text-shadow: 1px 0 1px #ddd;
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 1px;
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #f4f4f4;
+  border: 4px solid rgb(217, 47, 17);
   backdrop-filter: blur(8px);
 }
 
@@ -174,6 +196,7 @@ nav .link-wrapper:has(a.active) {
 
 .User .userInfo progress {
   grid-area: exp;
+  margin-top: 20px;
 }
 
 .User .userRanking {
@@ -206,7 +229,7 @@ nav .link-wrapper:has(a.active) {
   box-sizing: border-box;
   grid-area: Tasks;
   border: 2px solid #000;
-  width: 90%;
+  width: 80%;
   height: 100%;
   border: none;
   padding: 20px;
@@ -287,7 +310,7 @@ nav .link-wrapper:has(a.active) {
   grid-area: RandomQuests;
   border: 2px solid #000;
   box-sizing: border-box;
-  width: 90%;
+  width: 80%;
   height: 100%;
   border: none;
   border-radius: 20px;
@@ -331,9 +354,9 @@ nav .link-wrapper:has(a.active) {
   grid-area: Purchased;
   box-sizing: border-box;
   border: 2px solid #000;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
+  width: 80%;
+  height: 90%;
+  padding: 10px;
   border: none;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -356,6 +379,7 @@ nav .link-wrapper:has(a.active) {
   list-style-type: none;
   width: 600px;
   display: grid;
+  gap: 10px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   margin: 0;
@@ -380,16 +404,17 @@ nav .link-wrapper:has(a.active) {
 
 .Purchased ul li p {
   color: #eee;
+  margin: 4px 0;
   font-size: 18px;
 }
 
-/* GetCoins */
+/* Stats */
 
-.GetCoins {
-  grid-area: GetCoins;
+.Stats {
+  grid-area: Stats;
   border: 2px solid #000;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   border: none;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -402,8 +427,8 @@ nav .link-wrapper:has(a.active) {
   grid-area: DailyQuests;
   box-sizing: border-box;
   border: 2px solid #000;
-  width: 90%;
-  height: 100%;
+  width: 80%;
+  height: 90%;
   padding: 20px;
   border: none;
   border-radius: 20px;

@@ -1,5 +1,5 @@
 import DailyQuests from "../comps/DailyQuests";
-import GetCoins from "../comps/GetCoins";
+import Stats from "../comps/Stats";
 import Purchased from "../comps/Purchased";
 import RandomQuests from "../comps/RandomQuests";
 import Tasks from "../comps/Tasks";
@@ -7,12 +7,12 @@ import User from "../comps/User";
 
 function Home() {
   return (
-    <div className="container">
+    <div className="Home">
       <User />
+      <Stats />
       <Tasks />
       <RandomQuests />
       <Purchased />
-      <GetCoins />
       <DailyQuests />
     </div>
   );

@@ -7,7 +7,7 @@ function User() {
   const { displayName, level, expProgress, rank } = user.userInfo;
 
   return (
-    <div className="User grid-center">
+    <div className="User">
       <div className="userInfo">
         <span className="displayName">{displayName}</span>
         <span className="level">lvl {level}</span>
