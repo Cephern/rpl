@@ -3,6 +3,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 // comps
 
 import Logo from "./comps/Logo";
+import User from "./comps/User";
 import Nav from "./comps/Nav";
 import Account from "./pages/Account";
 import Home from "./pages/Home";
@@ -14,6 +15,7 @@ function App() {
       <div className="App">
         {/* <Logo /> */}
         <Nav />
+        <User />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />

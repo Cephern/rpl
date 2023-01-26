@@ -1,0 +1,90 @@
+/* User */
+.User {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 580px;
+  background-color: #000;
+  border-radius: 0 0 40px 0;
+}
+
+.userWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: none;
+
+  position: relative;
+}
+
+.userWrapper::before {
+  content: url("../assets/svgs/round.svg");
+  position: absolute;
+  bottom: -39px;
+  left: -2px;
+}
+
+.userWrapper::after {
+  content: url("../assets/svgs/round.svg");
+  position: absolute;
+  top: -2px;
+  right: -39px;
+}
+
+.userWrapper .userInfo {
+  display: grid;
+  grid-template-areas:
+    "displayName level"
+    "exp exp";
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+  margin-right: 20px;
+  color: #000;
+  text-shadow: 1px 0 1px #ddd;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  background-color: #f4f4f4;
+  border: 4px solid rgb(217, 47, 17);
+  backdrop-filter: blur(8px);
+}
+
+.userWrapper .userInfo .displayName {
+  grid-area: displayName;
+}
+
+.userWrapper .userInfo .level {
+  grid-area: level;
+}
+
+.userWrapper .userInfo progress {
+  grid-area: exp;
+  margin-top: 20px;
+}
+
+.userWrapper .userRanking {
+  padding: 10px;
+  margin-left: 20px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+}
+
+.userWrapper .userRanking img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.userWrapper .userRanking p {
+  margin: 0;
+  color: darkorange;
+  text-shadow: 1px 0 1px #000;
+  font-weight: bold;
+  font-size: 18px;
+}
